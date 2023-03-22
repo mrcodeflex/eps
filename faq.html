@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>EPS | Easy Payment System
+    </title>
+
+    <!--owl carousel css-->
+
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+
+
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" crossorigin="anonymous" />
+
+    <!--    animate css-->
+    <link rel="stylesheet" href="assets/animate-css/animate.min.css" />
+
+
+    <link rel="stylesheet" href="assets/animate-css/aos.css" />
+
+    <!--    bootstrap css-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+    <!-- Menu  Start  -->
+    <div class="col-md-12 navbg sticky-top">
+        <div class="col-md-3 topmenu1">
+            <a class="search" onclick="searchboxshow()"><i class="fa-solid fa-magnifying-glass" style="color:#666666"></i></a>
+
+            <button class="btn btn-success shadow-none hddownbtn" class="rgb-border-content" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Download</button>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg hd" style="position: relative;">
+
+
+
+            <div class="container-fluid">
+                <div class="logo1 col-md-2">
+                    <a href="#"><img src="assets/images/eps-logo.svg" class="" alt=""></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nv" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ui">
+                            <a class="nav-link " aria-current="page" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                                    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
+                                </svg> Home </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="#">
+                                <i class="fa-solid fa-hand-holding-medical"></i> Services </a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link   " aria-current="page" href="#">
+                                <i class="fa-solid fa-file-signature"></i> blog </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#">
+                                <i class="fa-solid fa-circle-question"></i> faq </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link   " aria-current="page" href="#">
+                                <i class="fa-solid fa-circle-info"></i> About Us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">
+                                <i class="fa-solid fa-envelope-circle-check"></i> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="col-md-3 header_buttons topmenu2">
+
+                <a class="search" onclick="searchboxshow()"><i class="fa-solid fa-magnifying-glass" style="color:#666666;cursor: pointer;"></i></a>
+
+                <button class="btn btn-success shadow-none hddownbtn" class="rgb-border-content" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="searchboxhidden()">Download</button>
+
+            </div>
+
+
+        </nav>
+    </div>
+
+
+
+
+    <!--  App Download Modal Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index:99999999">
+        <div class="modal-dialog modal-lg modal-dialog-centered ">
+            <div class="modal-content appdownloads" style=" background-color: transparent;   border: 0px solid rgba(0,0,0,.2);">
+
+
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 dwnsec">
+                            <a class="" data-bs-dismiss="modal">&times;</a>
+                            <img src="assets/images/modal-image.svg" class="modalimg" alt="">
+
+
+
+                        </div>
+                        <div class="col-md-8 dwndes">
+
+                            <h4>Download <img src="assets/images/appseclogo.png" alt=""> App</h4>
+                            <p style=""> EPS App is forthcoming with exciting services to make your lifestyle Secure, Simple, and Fast! </p>
+
+                            <div class="appicon">
+                                <a href="#"><img src="assets/images/googleplay.png" class="googleplay" alt=""></a>
+                                <a href="#"><img src="assets/images/appstore.png" class="appstore" alt=""></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Search Area Design -->
+    <div class="searchbox" id="searchdiv">
+        <div class="row">
+            <div class=" col-md-12 srcimg ">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-7"></div>
+                    <div class="col-md-1">
+                        <button type="button" onclick="searchboxhidden();" class="btn-close btn-close-white" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12 searchform">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <form action="#" method="POST">
+                            <input type="hidden" name="_token" value="MY3FWVU6Ssu8TLvC7bGtYDCWBwVcby08nE9qcCmm">
+                            <div class="input-group">
+                                <input type="text" class="form-control shadow-none" id="name" name="name" autocomplete="off" placeholder="Type Words and Hit Enter" />
+                                <div id="search_list">
+
+                                </div>
+
+
+                                <div class="input-group-append">
+                                    <input type="submit" class="btn  btn-danger shadow-none " value="Search" />
+
+
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Search Area Design -->
+
+
+
+
+
+
+    <!-- Menu  End -->
+
+
+    <style>
+        .faq-content ul li {
+            list-style: square;
+
+        }
+
+        .faq-content ul {
+            padding-bottom: 20px;
+        }
+
+        .faq-content {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+    </style>
+
+
+
+    <!-- // Start Code From Here -->
+
+    <!-- page heading  start-->
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12  front_banner bnpagehead ">
+                <h1> FAQ </h1>
+                <h5> Frequently asked <span> questions </span> </h5>
+                <p><a href="#"> home </a> / faq </span>
+            </div>
+        </div>
+    </div>
+    <!-- page heading  END-->
+
+
+
+
+    <div class="container faqdivision">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <div id="faq-links" style="position: sticky;top:10%;">
+                    <div id="All" class="faq-selected"> <i class="fa-solid fa-circle-chevron-right"></i> all </div>
+                    <div id="general"><i class="fa-solid fa-circle-chevron-right"></i> general </div>
+                    <div id="Account"><i class="fa-solid fa-circle-chevron-right"></i> account </div>
+                    <div id="ftransfer"><i class="fa-solid fa-circle-chevron-right"></i> transaction </div>
+
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="faqsearch">
+
+                </div>
+
+                <div id="faq-wrapper" class="about-All">
+
+                    <!--faq-group-->
+                    <div class="slide-left">
+                        <div class="faq">
+                            <ul class="faq-accordion">
+
+
+                                <li>
+                                    <a href="#"><span>Q.1</span>What is EPS?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>EPS is a Payment System Operator (PSO) licensed by the Bangladesh Bank. EPS provides Digital Transaction solutions for end users. EPS is authorized to provide services for personal/individual usage and for business/merchant/organizational usage.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.2</span>What are the EPS Services?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>EPS Services include</p>
+
+                                                <ul style="list-style-type:square">
+                                                    <li>Payment Gateway</li>
+                                                    <li>Bill Payment</li>
+                                                    <li>Mobile Recharge</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.3</span>How can I open an EPS account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>If you are an individual who wants to use EPS for personal usage, download the EPS app (click here to download) and create your account using your phone number & NID card. To open a Merchant Account need to few more documents. Please contact EPS Customer Support.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.4</span>What are the documents needed to open an EPS account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>For a personal account your NID card and phone number are good enough to open an account. To open a Merchant Account need to few more documents. Please contact EPS Customer Support.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.5</span>Is EPS a free online transaction service?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Depending on the Service type, EPS has a few services that are completely FREE to use. Other Services include Service Charges that are very affordable.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.6</span>Is my transaction safe over online?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>EPS uses Multiple Layers of Security to protect your data & actions over the internet. EPS adapts the latest FinTech Technologies to make sure that you have a safe & hassle-free environment for any online transaction.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.7</span>How do I contact EPS for any dispute/complaint?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>You can reach our customer support via phone, & email.<br />
+                                                    Contact Number: +8801-xxxxx<br />
+                                                    E-mail: support@exmpl.com</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.8</span>When someone pays me through EPS, how do I get the money?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Money can be received both in Bank A/C and MFS Wallet.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.9</span>When someone sends me money on EPS, does it go to my bank account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Yes. It is instantly transferred to your bank A/C via EPS network.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.10</span>How can I download the EPS App?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>You can get it from the play store (Android), App Store (iOS) or via direct repository from EPS website.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.11</span>How can I recover my EPS account password?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>You can reset your PIN using the EPS app or via contacting EPS support.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.12</span>Do I need to open an account to use EPS services?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Yes! To access all EPS services, users have to open an EPS account.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.13</span>Who can open an account for EPS?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <ul>
+                                                    <li>End Users: (General User, Any Bangladeshi National who has a valid NID).</li>
+                                                    <li>Businesses: (Any registered and valid Business that is authorized by the Government of Bangladesh to operate as a business entity in Bangladesh).</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.14</span>Where shall I go to open an EPS account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>You can open an account using the EPS mobile app or EPS web application (Merchant).</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.15</span>Can I make transactions 24/7 using EPS?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Yes.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.16</span>Is there any charge to opening an EPS account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>No.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.17</span>How shall I be notified after each transaction?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Via EPS app notification & SMS</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.18</span>What happens If I enter the wrong PIN multiple times?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Your EPS account will be locked temporarily & you&#39;ll have to contact support to reset your PIN & activate your EPS account.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.19</span>What will be the process if the transaction ID is required but confirmation SMS is unavailable?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>You can check your app history or reach our customer support.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.20</span>How long does it take to complete a transaction?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>EPS transactions are Instantaneous. Based on EPS partner system policy and availability, a transaction may takes more time.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.21</span>How do I keep my account secure?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>DO NOT share your EPS PIN with anyone. EPS support staff will never ask for your PIN under any circumstances.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.22</span>What happens to my EPS account if I change my mobile number or account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>You can re-login to your EPS account using the EPS app.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.23</span>Is there any charge If I call EPS helpline number?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Standard call charges will be applied by your mobile operator.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.24</span>How will EPS charge me for each transaction?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>EPS service charges will be shown to the user before final confirmation (If any charges are applicable for the service).</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.25</span>How do I delete my EPS account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Please Contact EPS Customer Support to block/disable or delete your account.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.26</span>What shall I do if my mobile is lost or stolen?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>In that event, contact EPS support immediately to lock & reset your EPS account.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.27</span>Can I have more than one EPS account?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>We strongly suggest you NOT to open multiple EPS accounts using a single NID cause this may result in a permanent suspension of all your accounts for fraudulent activity.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.28</span>Can I get any account transaction statements?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Yes, you can access & download the transaction statement from your mobile app.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.29</span>Are there any hidden charges?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>All service charges are disclosed to the user before transaction event. EPS does not have any hidden charges.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#"><span>Q.30</span>Is there any charge for accessing EPS through USSD?</a>
+                                    <ul class="faq-content">
+                                        <li>
+                                            <div>
+                                                <p>Currently, EPS services are not available through USSD</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+
+
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="about-general faq-hide">
+
+
+
+                    <div class="slide-left">
+                        <ul class="faq-accordion">
+
+
+                            <li>
+                                <a href="#"><span>Q.1</span>What is EPS?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>EPS is a Payment System Operator (PSO) licensed by the Bangladesh Bank. EPS provides Digital Transaction solutions for end users. EPS is authorized to provide services for personal/individual usage and for business/merchant/organizational usage.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.2</span>What are the EPS Services?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>EPS Services include</p>
+
+                                            <ul style="list-style-type:square">
+                                                <li>Payment Gateway</li>
+                                                <li>Bill Payment</li>
+                                                <li>Mobile Recharge</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.3</span>Is EPS a free online transaction service?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Depending on the Service type, EPS has a few services that are completely FREE to use. Other Services include Service Charges that are very affordable.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.4</span>Is my transaction safe over online?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>EPS uses Multiple Layers of Security to protect your data & actions over the internet. EPS adapts the latest FinTech Technologies to make sure that you have a safe & hassle-free environment for any online transaction.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.5</span>How do I contact EPS for any dispute/complaint?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>You can reach our customer support via phone, & email.<br />
+                                                Contact Number: +8801-xxxxxxx<br />
+                                                E-mail: support@exmpl.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.6</span>When someone pays me through EPS, how do I get the money?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Money can be received both in Bank A/C and MFS Wallet.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.7</span>When someone sends me money on EPS, does it go to my bank account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Yes. It is instantly transferred to your bank A/C via EPS network.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.8</span>How can I download the EPS App?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>You can get it from the play store (Android), App Store (iOS) or via direct repository from EPS website.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.9</span>How can I recover my EPS account password?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>You can reset your PIN using the EPS app or via contacting EPS support.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.10</span>Do I need to open an account to use EPS services?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Yes! To access all EPS services, users have to open an EPS account.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.11</span>Who can open an account for EPS?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <ul>
+                                                <li>End Users: (General User, Any Bangladeshi National who has a valid NID).</li>
+                                                <li>Businesses: (Any registered and valid Business that is authorized by the Government of Bangladesh to operate as a business entity in Bangladesh).</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.12</span>Is there any charge If I call EPS helpline number?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Standard call charges will be applied by your mobile operator.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.13</span>Are there any hidden charges?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>All service charges are disclosed to the user before transaction event. EPS does not have any hidden charges.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.14</span>Is there any charge for accessing EPS through USSD?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Currently, EPS services are not available through USSD</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="about-Account faq-hide">
+
+
+
+
+                    <div class="slide-left">
+                        <ul class="faq-accordion">
+
+
+                            <li>
+                                <a href="#"><span>Q.1</span>How can I open an EPS account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>If you are an individual who wants to use EPS for personal usage, download the EPS app (click here to download) and create your account using your phone number & NID card. To open a Merchant Account need to few more documents. Please contact EPS Customer Support.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.2</span>What are the documents needed to open an EPS account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>For a personal account your NID card and phone number are good enough to open an account. To open a Merchant Account need to few more documents. Please contact EPS Customer Support.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.3</span>Where shall I go to open an EPS account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>You can open an account using the EPS mobile app or EPS web application (Merchant).</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.4</span>Is there any charge to opening an EPS account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>No.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.5</span>What happens If I enter the wrong PIN multiple times?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Your EPS account will be locked temporarily & you&#39;ll have to contact support to reset your PIN & activate your EPS account.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.6</span>How do I keep my account secure?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>DO NOT share your EPS PIN with anyone. EPS support staff will never ask for your PIN under any circumstances.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.7</span>What happens to my EPS account if I change my mobile number or account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>You can re-login to your EPS account using the EPS app.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.8</span>How do I delete my EPS account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Please Contact EPS Customer Support to block/disable or delete your account.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.9</span>What shall I do if my mobile is lost or stolen?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>In that event, contact EPS support immediately to lock & reset your EPS account.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.10</span>Can I have more than one EPS account?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>We strongly suggest you NOT to open multiple EPS accounts using a single NID cause this may result in a permanent suspension of all your accounts for fraudulent activity.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-ftransfer faq-hide">
+
+
+                    <div class="slide-left">
+                        <ul class="faq-accordion">
+
+
+                            <li>
+                                <a href="#"><span>Q.1</span>Can I make transactions 24/7 using EPS?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Yes.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.2</span>How shall I be notified after each transaction?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Via EPS app notification & SMS</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.3</span>What will be the process if the transaction ID is required but confirmation SMS is unavailable?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>You can check your app history or reach our customer support.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.4</span>How long does it take to complete a transaction?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>EPS transactions are Instantaneous. Based on EPS partner system policy and availability, a transaction may takes more time.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.5</span>How will EPS charge me for each transaction?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>EPS service charges will be shown to the user before final confirmation (If any charges are applicable for the service).</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="#"><span>Q.6</span>Can I get any account transaction statements?</a>
+                                <ul class="faq-content">
+                                    <li>
+                                        <div>
+                                            <p>Yes, you can access & download the transaction statement from your mobile app.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+
+    <div class="container faqquery">
+        <div class="row">
+
+            <div class="col-md-12">
+                <h3> Still have a question? </h3>
+                <p> If you can not find the answers of your questions in our FAQ, you can always <a href="#"> Contact Us </a>. We will get back to you shortly! </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- // Start Social Icon -->
+
+
+    <!-- // Start Social Icon -->
+    <section>
+        <div class="social animate__animated animate__fadeInLeft">
+            <ul>
+                <li id="ytb" onmouseover="YoutubeShow()" onmouseout="YoutubeOut()">
+                    <a id="youtube" href="#" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li id="twt" onmouseover="twitterShow()" onmouseout="twitterOut()">
+                    <a id="twitter" href="https://twitter.com/mrcodeflex" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li id="lnk" onmouseover="LinkedInShow()" onmouseout="LinkedInOut()">
+                    <a id="linkedin" href="#" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li id="fb" onmouseover="FacebookShow()" onmouseout="FacebookOut()">
+                    <a id="facebook" href="https://www.facebook.com/mrcodeflex" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- // End Social Icon -->
+
+    <!-- // End Social Icon -->
+
+
+    <!-- Footer  Start -->
+
+
+
+
+
+
+
+
+
+
+    <div id="stop" class="scrollTop hvr-grow">
+        <a href=""><svg width="35" height="33" viewBox="0 0 40 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.9697 19.0296L22.2315 1.813C21.5626 1.16079 20.7852 0.838151 19.8997 0.845067C18.9971 0.852116 18.2334 1.1867 17.6081 1.84911L1.11196 19.3253C0.470009 20.0051 0.152798 20.816 0.160057 21.7575C0.167455 22.7168 0.49742 23.5135 1.14915 24.1477L3.08026 26.1311C3.69871 26.8011 4.46775 27.1331 5.38726 27.126C6.30686 27.1188 7.0705 26.7749 7.67863 26.0952L19.994 13.0752L32.5087 25.901C33.1266 26.5708 33.8956 26.903 34.816 26.8958C35.718 26.8888 36.4907 26.5445 37.1322 25.8649L39.0323 23.8516C39.6574 23.1894 39.9666 22.3876 39.9593 21.4464C39.952 20.5048 39.6225 19.699 38.9697 19.0296Z" fill="#EE2D43" fill-opacity="0.6" />
+                <path d="M29.4337 25.1105L21.065 16.5025C20.7305 16.1764 20.3418 16.0151 19.8991 16.0186C19.4477 16.0221 19.0659 16.1894 18.7532 16.5206L10.5048 25.2591C10.1839 25.599 10.0252 26.0044 10.0288 26.4752C10.0325 26.9549 10.1975 27.3532 10.5233 27.6703L11.4889 28.662C11.7981 28.9969 12.1826 29.1629 12.6423 29.1593C13.1021 29.1557 13.484 28.9837 13.7881 28.6439L19.946 22.1336L26.2031 28.5463C26.512 28.8812 26.8965 29.0473 27.3567 29.0437C27.8077 29.0401 28.1941 28.868 28.5148 28.5282L29.4649 27.5215C29.7775 27.1904 29.9321 26.7895 29.9285 26.3189C29.9249 25.848 29.7601 25.4452 29.4337 25.1105Z" fill="#006B4F" fill-opacity="0.6" />
+                <path d="M24.668 28.6548L20.4836 24.3509C20.3164 24.1878 20.1221 24.1072 19.9007 24.1089C19.675 24.1107 19.4841 24.1943 19.3278 24.3599L15.2036 28.7291C15.0431 28.8991 14.9638 29.1018 14.9656 29.3372C14.9674 29.577 15.0499 29.7762 15.2128 29.9347L15.6956 30.4306C15.8502 30.5981 16.0425 30.6811 16.2723 30.6793C16.5022 30.6775 16.6932 30.5915 16.8452 30.4216L19.9242 27.1664L23.0527 30.3728C23.2072 30.5402 23.3994 30.6233 23.6295 30.6214C23.855 30.6197 24.0482 30.5336 24.2086 30.3637L24.6836 29.8604C24.8399 29.6948 24.9172 29.4943 24.9154 29.259C24.9136 29.0236 24.8312 28.8222 24.668 28.6548Z" fill="#006B4F" fill-opacity="0.6" />
+            </svg></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--  App Download Modal Modal -->
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index:99999999">
+        <div class="modal-dialog modal-lg modal-dialog-centered ">
+            <div class="modal-content appdownloads" style=" background-color: transparent;   border: 0px solid rgba(0,0,0,.2);">
+
+
+
+                <div class="col-md-12">
+                    <a class="webpopclose" data-bs-dismiss="modal" style=""><i class="fa-solid fa-xmark"></i></a>
+
+                    <div class="col-md-12 wpopupview">
+
+                        <img src="assets/images/popup-img.jpg" class="img-responsive webpopupimg" alt="">
+                        <div class="wpopupviewtextblock">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <p class="webpopuptxt">EPS - Easy Payment System has been licensed by the Bangladesh Bank as a Payment System Operator (PSO)</p>
+                                </div>
+                                <div class="col-md-3 webpoplink">
+                                    <a href="#" class="btn btn-sm btn-success shadow-none ">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer  Start -->
+    <footer class="container-fluid  footer fixed-bottom">
+        <div class="row">
+            <div class="col-md-12 ">
+                <ul class="sd">
+                    <li>
+                        <a href="#" class=" ">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Press Release</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" ">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Event </a>
+                    </li>
+                    <li>
+                        <a href="#" class=" ">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Career </a>
+                    </li>
+
+
+                    <li>
+                        <a class="" href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> privacy Policy </a>
+                    </li>
+                    <li>
+                        <a class="" href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Cookie </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> SiteMap </a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <div class="col-md-12 ">
+                <div class="mobilesocial center">
+                    <div class="div">
+                        <hr style="color: white;height:2px;width:100%">
+                    </div>
+                    <ol class="msocial">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/mrcodeflex">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/mrcodeflex" class="active">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="copyright">
+                    <p> © Copyrights 2022 EPS All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+    </footer>
+
+
+    <!-- Footer End -->
+
+
+
+    <!--jquery -->
+
+    <script src="assets/Jquery/jquery-3.6.1.min.js"></script>
+
+
+    <!--owl carousel -->
+
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+
+    <!--    animate- css js -->
+    <script src="assets/animate-css/aos.js"></script>
+
+    <!--   isotope js -->
+
+    <script src="assets/isotope/isotope.pkgd.min.js"></script>
+
+    <!--gsap -->
+    <script src="assets/gsap/gsap.min.js"></script>
+
+    <!-- bootstrap js-->
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"> </script>
+
+
+
+    <!--    activation js -->
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#name").on('keyup', function() {
+
+                var value = $(this).val();
+
+                if (value == "") {
+                    $("#search_list").hide();
+                } else {
+                    $("#search_list").show();
+                    $.ajax({
+
+                        url: "#",
+                        type: "GET",
+                        data: {
+                            'name': value
+                        },
+                        success: function(data) {
+
+                            $("#search_list").html(data);
+
+
+                        },
+
+
+                    });
+                }
+
+
+            });
+
+            $(document).on('click', 'li', function() {
+                var value = $(this).text();
+                $("#name").val(value);
+                $("#search_list").html("");
+
+
+            });
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false,
+                },
+                600: {
+                    items: 3,
+                    nav: false,
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.portfolio-item').isotope(function() {
+                itemSelector: '.item'
+            });
+
+
+
+            $('.portfolio-menu ul li').click(function() {
+                $('.portfolio-menu ul li').removeClass('active');
+                $(this).addClass('active');
+
+                var selector = $(this).attr('data-filter');
+                $('.portfolio-item').isotope({
+                    filter: selector
+                })
+                return false;
+            });
+        });
+
+    </script>
+
+
+    <script>
+        /*<p>Pagination part? borrowed from <a href='/JoshBlackwood/'>Joshua Blackwood</a>'s Pen <a href='/JoshBlackwood/pen/yoLBJ/'>yoLBJ</a>.</p>*/
+
+        var accordWithPage = function() {
+
+            var faqDiv = $('#faq-links div');
+
+
+            $(function() {
+
+                faqDiv.on("click", function() {
+
+                    var hideSec = 'faq-hide';
+                    var $this = $(this),
+                        $id = $this.attr('id'),
+                        $class = '.' + $('.about-' + $id).attr('class').replace(hideSec, '');
+
+                    $('#faq-wrapper').addClass(hideSec);
+                    $('.about-' + $id).removeClass(hideSec);
+                    $('div[class*=about]').not($class).addClass(hideSec);
+
+                });
+
+            });
+
+            $(function() {
+
+                var select = 'faq-selected';
+
+                faqDiv.click(function() {
+
+                    if ($(this).hasClass(select)) {
+                        $(this).removeClass(select);
+                    } else {
+                        $('#faq-links .faq-selected').removeClass(select);
+                        $(this).addClass(select);
+                    }
+                }); //faq link selected
+            });
+
+
+
+
+            //Accordion
+
+            $(function() {
+
+                var expand = 'expanded';
+                var content = $('.faq-content');
+                //FAQ Accordion
+                $('.faq-accordion > li > a').click(function(e) {
+                    e.preventDefault();
+                    if ($(this).hasClass(expand)) {
+                        $(this).removeClass(expand);
+                        //          $('.faq-accordion > li > a > div').not(this).css('opacity', '1');//returns li back to normal state
+                        $(this).parent().children('ul').stop(true, true).slideUp();
+                    } else {
+                        //            $('.faq-accordion > li > a > div').not(this).css('opacity', '0.5');//dims inactive li
+                        $('.faq-accordion > li > a.expanded').removeClass(expand);
+                        $(this).addClass(expand);
+                        content.filter(":visible").slideUp();
+                        $(this).parent().children('ul').stop(true, true).slideDown();
+                    }
+                }); //accordion function
+
+                content.hide();
+
+            });
+
+        }
+
+        accordWithPage();
+
+        /*$(function () {
+           $("#faq-links div").click(function () {
+            $('.slide-left').fadeOut( "slow", "linear" );
+             $('.slide-left').fadeIn( "slow", "linear" );
+            }); //faq link fade in and out
+          }); //document ready*/
+
+    </script>
+
+
+
+
+
+    <!-- Script for slider hover image -->
+    <!-- Script for slider hover image end-->
+    <!-- Subscription button feature -->
+    <script>
+        $(function() {
+            "use strict";
+            var body = $("body"),
+                // var slideCont = document.querySelector(".fa fa-circle-o"),
+                // active = $(".slider ol li .auto-btn, .slider .controll"),
+                active = $(".slider-main ol li ,  .slider-main .controll"),
+                controll = $(".slider-main .controll"),
+                playpause = $(".playpause"),
+                sliderTime = 1,
+                sliderWait = 5000,
+                i = 999,
+                autoRun,
+                stop = false;
+            // Reset
+            $(".slider-main ul li:first").css("left", 0);
+            // Run Slider
+            function runSlider(what) {
+                what.addClass("active").siblings("li, span").removeClass("active");
+            }
+            // slider gsap
+            function gsapSlider(whose, left) {
+                i++;
+                if (whose.hasClass("active")) {
+                    TweenMax.fromTo(".slider-main ul li.active", sliderTime, {
+                        zIndex: i,
+                        left: left
+                    }, {
+                        left: 0
+                    });
+                }
+            }
+            // Active
+            active.on("mouseover", function() {
+                runSlider($(this));
+            });
+            // Arrow left
+            controll.first().on("click", function() {
+                var slide = $(".slider-main ul li.active, .slider-main ol li.active, ").is(":first-of-type") ? $(".slider-main ul li:last, .slider-main ol li :last") : $(".slider-main ul li.active, .slider-main ol li.active").prev("li");
+                runSlider(slide);
+                gsapSlider(slide, "100%");
+            });
+            // Arrow right
+            controll.last().on("click", function() {
+                var slide = $(".slider-main ul li.active, .slider-main ol li.active").is(":last-of-type") ? $(".slider-main ul li:first, .slider-main ol li :first") : $(".slider-main ul li.active, .slider-main ol li .active").next("li");
+                runSlider(slide);
+                gsapSlider(slide, "-100%");
+            });
+            // Point
+            $(".slider-main ol li ").on("mouseover", function() {
+                var start = $(".slider-main ul li.active").index();
+                var slide = $(".slider-main ul li").eq($(this).index());
+                runSlider(slide);
+                var end = $(".slider-main ul li.active").index();
+                if (start > end) {
+                    gsapSlider(slide, "100%");
+                }
+                if (start < end) {
+                    gsapSlider(slide, "-100%");
+                }
+            });
+            // Auto run slider
+            function autoRunSlider() {
+                if (body.css("direction") === "ltr" && stop === false) {
+                    autoRun = setInterval(function() {
+                        controll.last().click();
+                    }, sliderWait);
+                } else if (body.css("direction") === "rtl" && stop === false) {
+                    autoRun = setInterval(function() {
+                        controll.first().click();
+                    }, sliderWait);
+                }
+            }
+            autoRunSlider();
+            // When hover
+            active.on("mouseover", function() {
+                if (stop === false) {
+                    clearInterval(autoRun);
+                }
+            });
+            active.on("mouseout", function() {
+                if (stop === false) {
+                    autoRunSlider();
+                }
+            });
+            // play pause click
+        });
+
+    </script>
+    <script>
+        $(function() {
+            "use strict1";
+            var body = $("body"),
+                active = $(".slider-main ol li , .slider-main .top-controll"),
+                controll = $(".slider-main .top-controll"),
+                playpause = $(".playpause"),
+                sliderTime = 1,
+                sliderWait = 5000,
+                i = 0,
+                autoRun,
+                stop = false;
+            // Reset
+            $(".slider-popup-top ul li:first").css("left", 0);
+            // Run Slider
+            function runSlider(what) {
+                what.addClass("active").siblings("li, span").removeClass("active");
+            }
+            // slider gsap
+            function gsapSlider(whose, left) {
+                i++;
+                if (whose.hasClass("active")) {
+                    TweenMax.fromTo(".slider-popup-top ul li.active", sliderTime, {
+                        zIndex: i,
+                        left: left
+                    }, {
+                        left: 0
+                    });
+                }
+            }
+            // Active
+            active.on("mouseover", function() {
+                runSlider($(this));
+            });
+            // Arrow left
+            controll.first().on("click", function() {
+                var slide = $(".slider-popup-top ul li.active, .slider-main ol li.active").is(":first-of-type") ? $(".slider-popup-top ul li:last, .slider-main  ol li:last") : $(".slider-popup-top ul li.active, .slider-main  ol li.active").prev("li");
+                runSlider(slide);
+                gsapSlider(slide, "100%");
+            });
+            // Arrow right
+            controll.last().on("click", function() {
+                var slide = $(".slider-popup-top ul li.active, .slider-main  ol li.active").is(":last-of-type") ? $(".slider-popup-top ul li:first, .slider-main  ol li:first") : $(".slider-popup-top ul li.active, .slider-main  ol li.active").next("li");
+                runSlider(slide);
+                gsapSlider(slide, "-100%");
+            });
+            // Point
+            $(".slider-main ol li").on("mouseover", function() {
+                var start = $(".slider-popup-top ul li.active").index();
+                var slide = $(".slider-popup-top ul li").eq($(this).index());
+                runSlider(slide);
+                var end = $(".slider-popup-top ul li.active").index();
+                if (start > end) {
+                    gsapSlider(slide, "100%");
+                }
+                if (start < end) {
+                    gsapSlider(slide, "-100%");
+                }
+            });
+            // Auto run slider
+            function autoRunSlider1() {
+                if (body.css("direction") === "ltr" && stop === false) {
+                    autoRun = setInterval(function() {
+                        controll.last().click();
+                    }, sliderWait);
+                } else if (body.css("direction") === "rtl" && stop === false) {
+                    autoRun = setInterval(function() {
+                        controll.first().click();
+                    }, sliderWait);
+                }
+            }
+            autoRunSlider1();
+            // When hover
+            active.on("mouseenter", function() {
+                if (stop === false) {
+                    clearInterval(autoRun);
+                }
+            });
+            active.on("mouseleave", function() {
+                if (stop === false) {
+                    autoRunSlider1();
+                }
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+            "use strict2";
+            var body = $("body"),
+                active = $(".slider-main ol li, .slider-main .bottom-controll"),
+                controll = $(".slider-main .bottom-controll"),
+                playpause = $(".playpause"),
+                sliderTime = 1,
+                sliderWait = 5000,
+                i = 1,
+                autoRun,
+                stop = false;
+            // Reset
+            $(".slider-popup-bottom ul li:first").css("left", 0);
+            // Run Slider
+            function runSlider(what) {
+                what.addClass("active").siblings("li, span").removeClass("active");
+            }
+            // slider gsap
+            function gsapSlider(whose, left) {
+                i++;
+                if (whose.hasClass("active")) {
+                    TweenMax.fromTo(".slider-popup-bottom ul li.active", sliderTime, {
+                        zIndex: i,
+                        left: left
+                    }, {
+                        left: 0
+                    });
+                }
+            }
+            // Active
+            active.on("mouseover", function() {
+                runSlider($(this));
+            });
+            // Arrow left
+            controll.first().on("click", function() {
+                var slide = $(".slider-popup-bottom ul li.active, .slider-p ol li.active").is(":first-of-type") ? $(".slider-popup-bottom ul li:last, .slider-p ol li:last") : $(".slider-popup-bottom ul li.active, .slider-p ol li.active").prev("li");
+                runSlider(slide);
+                gsapSlider(slide, "100%");
+            });
+            // Arrow right
+            controll.last().on("click", function() {
+                var slide = $(".slider-popup-bottom ul li.active, .slider-p ol li.active").is(":last-of-type") ? $(".slider-popup-bottom ul li:first, .slider-p ol li:first") : $(".slider-popup-bottom ul li.active, .slider-p ol li.active").next("li");
+                runSlider(slide);
+                gsapSlider(slide, "-100%");
+            });
+            // Point
+            $(".slider-main ol li").on("mouseover", function() {
+                var start = $(".slider-popup-bottom ul li.active").index();
+                var slide = $(".slider-popup-bottom ul li").eq($(this).index());
+                runSlider(slide);
+                var end = $(".slider-popup-bottom ul li.active").index();
+                if (start > end) {
+                    gsapSlider(slide, "100%");
+                }
+                if (start < end) {
+                    gsapSlider(slide, "-100%");
+                }
+            });
+            // Auto run slider
+            function autoRunSlider1() {
+                if (body.css("direction") === "ltr" && stop === false) {
+                    autoRun = setInterval(function() {
+                        controll.last().click();
+                    }, sliderWait);
+                } else if (body.css("direction") === "rtl" && stop === false) {
+                    autoRun = setInterval(function() {
+                        controll.first().click();
+                    }, sliderWait);
+                }
+            }
+            autoRunSlider1();
+            // When hover
+            active.on("mouseover", function() {
+                if (stop === false) {
+                    clearInterval(autoRun);
+                }
+            });
+            active.on("mouseout", function() {
+                if (stop === false) {
+                    autoRunSlider1();
+                }
+            });
+        });
+
+    </script>
+
+
+
+</body>
