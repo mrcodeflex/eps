@@ -307,7 +307,7 @@ body {
 }
 
 .trafficimg {
-background-image: url('../img/tariffinput.png');
+background-image: url('assets/images/tariffinput.png');
 background-size: contain;
 background-repeat: no-repeat;
 background-position: left;
@@ -6470,7 +6470,7 @@ border-bottom-right-radius: 8px;
       z-index: 9999;
       opacity: 1;
       transform: opacity 1s ;
-        background: white url('../img/preload.gif') no-repeat center center;
+        background: white url('assets/images/preloader.gif') no-repeat center center;
         display: none;
       }
 
@@ -6612,7 +6612,7 @@ border-bottom-right-radius: 8px;
       }
 
     .subtab{
-        background-image: url(../img/msubscripetion.png);
+        background-image: url(assets/images/msubscripetion.png);
         margin-right: 65px;
         width: 50px;
         height: 200px;
@@ -7092,7 +7092,7 @@ border-bottom-right-radius: 8px;
 
 
 	.navbar-toggler {
-		background-image: url('../img/toggleicon.png');
+		background-image: url('assets/images/toggleicon.png');
 		background-repeat: no-repeat;
 		background-position: center;
 
@@ -7987,7 +7987,7 @@ border-bottom-right-radius: 8px;
 		margin-top: -100px;
 		width: 320px;
 		z-index: 500;
-		background-image: url(../img/logo-png.png);
+		background-image: url(assets/images/logo-png.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -10241,10 +10241,10 @@ margin-bottom: 25px;
 	  .carousel-item {
 		height: 300px;
 	  }
-/* removed */
+
 
 	.subtab{
-        background-image: url(../img/msubscripetion.png);
+        background-image: url(assets/images/msubscripetion.png);
         margin-right: 65px;
         width: 50px;
         height: 200px;
@@ -10315,7 +10315,7 @@ margin-bottom: 25px;
 	}
 
 	.navbar-toggler {
-		background-image: url('../img/toggleicon.png');
+		background-image: url('assets/images/toggleicon.png');
 		background-repeat: no-repeat;
 		background-position: center;
 
@@ -11251,7 +11251,7 @@ margin-bottom: 25px;
 		height: 400px;
 		margin-left: 100px;
 		z-index: 500;
-		background-image: url(../img/logo-png.png);
+		background-image: url(assets/images/logo-png.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center center;
